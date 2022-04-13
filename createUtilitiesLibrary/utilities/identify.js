@@ -1,5 +1,5 @@
 // Find the largest number in an array
-exports.lgNum = (arr) => {
+const lgNum = (arr) => {
   let largest = 0;
   arr.forEach((x) => {
     if (x > largest) {
@@ -10,7 +10,9 @@ exports.lgNum = (arr) => {
 };
 
 // Remove the 3rd item from an array
-exports.cut3 = (arr) => {
+const cut3 = (arr) => {
   arr.splice(2, 1);
   return arr;
 };
+
+module.exports = { lgNum, cut3 }
