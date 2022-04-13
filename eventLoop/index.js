@@ -10,7 +10,7 @@ fs.readFile(__filename, () => {
   });
 });
 
-setImmediate(() => {
+process.nextTick(() => {
   console.log('Print Second');
 });
 
