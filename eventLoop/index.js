@@ -1,6 +1,6 @@
-const fs = require('fs');
+const fs = require("fs");
 
-process.on('beforeExit', () => {
+process.on("beforeExit", () => {
   console.log("Print Fifth");
 });
 
@@ -11,11 +11,11 @@ fs.readFile(__filename, () => {
 });
 
 process.nextTick(() => {
-  console.log('Print Second');
+  console.log("Print Second");
 });
 
-console.log('Print First');
+console.log("Print First");
 
 setTimeout(() => {
-console.log("Print Fourth");
+  console.log("Print Fourth");
 }, 2000);
